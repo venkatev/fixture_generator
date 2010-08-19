@@ -1,0 +1,19 @@
+FixtureGenerator
+================
+
+Rails way of generating fixtures. Create your fixture records using active
+record 'create' calls and convert them into yml files easily.
+
+Example
+=======
+
+class MyFixtureGenerator < FixtureGenerator
+  def populate
+    # Create your records here and add them to the fixture set by calling
+    # 'add_record(record_name, record_object)'. That's it!
+  end
+end
+
+MyFixtureGenerator.generate
+
+Copyright (c) 2010 Vikram Venkatesan, released under the MIT license
